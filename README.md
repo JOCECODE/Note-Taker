@@ -16,11 +16,11 @@
 [![click to watch the video](http://img.youtube.com/vi/DW62Kkc188c/0.jpg)](http://www.youtube.com/watch?v=DW62Kkc188c "User Demo Of The Application")
 
 Screenshots:
-![screenshots](.\Develop\screenshots\Screenshots(2).png "Screenshot Of User Demo")
-![screenshots](.\Develop\screenshots\Screenshots(5).png "Screenshot Of User Demo")
-![screenshots](.\Develop\screenshots\Screenshots(1).png "Screenshot Of User Demo")
-![screenshots](.\Develop\screenshots\Screenshots(3).png "Screenshot Of User Demo")
-![screenshots](.\Develop\screenshots\Screenshots(4).png "Screenshot Of User Demo")
+![screenshots](.\screenshots\Screenshots(2).png "Screenshot Of User Demo")
+![screenshots](.\screenshots\Screenshots(5).png "Screenshot Of User Demo")
+![screenshots](.\screenshots\Screenshots(1).png "Screenshot Of User Demo")
+![screenshots](.\screenshots\Screenshots(3).png "Screenshot Of User Demo")
+![screenshots](.\screenshots\Screenshots(4).png "Screenshot Of User Demo")
 
 ## Description
 
