@@ -26,7 +26,6 @@ module.exports = (app) => {
    let filteredNotes = db.filter(
      (note) => { return note.id === parseInt(chosen)});
       let index = db.indexOf(filteredNotes[0]);
-      console.log(index);
      db.splice(index,1);
       res.json(db);
      });

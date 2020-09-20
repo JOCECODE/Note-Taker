@@ -13,30 +13,35 @@
 
 ## User-Demo
 
-[![User Demo of The Application](http://img.youtube.com/vi/ZSwRZUvwkek/0.jpg)](http://www.youtube.com/watch?v=ZSwRZUvwkek "(click to watch the YouTube video)")
+[![click to watch the video](http://img.youtube.com/vi/DW62Kkc188c/0.jpg)](http://www.youtube.com/watch?v=DW62Kkc188c "User Demo Of The Application")
 
 Screenshots:
 ![screenshots](.\Develop\screenshots\Screenshots(2).png "Screenshot Of User Demo")
+![screenshots](.\Develop\screenshots\Screenshots(5).png "Screenshot Of User Demo")
+![screenshots](.\Develop\screenshots\Screenshots(1).png "Screenshot Of User Demo")
 ![screenshots](.\Develop\screenshots\Screenshots(3).png "Screenshot Of User Demo")
+![screenshots](.\Develop\screenshots\Screenshots(4).png "Screenshot Of User Demo")
 
 ## Description
 
-This is a command-line application that dynamically generates a team.html containing the requested teams the user wanted team.html from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer).
+In this application, the user can write, save, and delete notes. By using `node` and `express` all user inputed notes will be displayed for the user to `DELETE` if needed or `POST` new notes as needed. It is deployed through _PORT4001_ and has a `server.js` file to start the application.
 
 ## User-Story
 
 ```
-As a web developer I want a quick way to generate a team.html to show all the people on my team and their info.
+As an intern, I want to be able to 
+"SAVE" notes of various tasks, appointments, and important upcoming info.
+"DELETE" no longer wanted notes. 
 ```
 
 ## Installation&Usage
 
 - Must download and install [Node](https://nodejs.org/en/download/)
-- Must have inquirer
-  - to install [inquirer](https://www.npmjs.com/package/inquirer#installation) run the following code in your terminal:
-    `npm i inquirer`
+- Must have express
+  - to install [express](https://www.npmjs.com/package/express) run the following code in your terminal:
+    `npm i express`
 - User-Flow
-  - Using the _app.js_ as a an entry point then running `node app.js` on the terminal will start the application. The application starts by asking "What is your manager's name?" It follows a series of more questions and upon completion displays a success message stating the file has been created. The new file will be made in the output file as an html.
+  - Using the _server.js_ as a an entry point then running `node server.js` on the terminal will start the application. The application starts by taking the user to the Note-Taker homepage. From there, the user can click, "GET STARTED" which then takes the user to the notes.html page showing the users saved notes. The user can than `SAVE` and `DELETE` notes. 
 
 ## License
 
