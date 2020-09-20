@@ -1,6 +1,5 @@
 const db = require("../db/db.json");
 const fs = require("fs");
-let notesId = [];
 let counter = db.length;
 function addCounter(){
   counter = counter + 1;
@@ -22,18 +21,14 @@ module.exports = (app) => {
            });
            return res.json(db);
 })
-    app.delete("/api/notes/:id", (req,res) => {     
-    notesId = db; 
+    app.delete("/api/notes/:id", (req,res) => {  
     let chosen = req.params.id;
-    let less = notesId[chosen - 1].id;
-    console.log(notesId)
-     if(chosen === less.toString()){
-   let filteredNotes = notesId.filter(
-     (note) => note.id === parseInt(chosen));
-         fs.writeFile("../db/db.json", JSON.stringify(filteredNotes), (err) => {
-           if (err) throw err;
-         });
-     };
-        return res.json(db);
-});
+   let filteredNotes = db.filter(
+     (note) => { return note.id === parseInt(chosen)});
+      let index = db.indexOf(filteredNotes[0]);
+      console.log(index);
+     db.splice(index,1);
+      res.json(db);
+     });
+        
 };
